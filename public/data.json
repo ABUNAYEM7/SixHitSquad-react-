@@ -1,0 +1,103 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/80nPSR8/tamim.png",
+      "name": "Tamim Iqbal",
+      "player_category": "Batsman",
+      "country": "Bangladesh",
+      "hand": "Left-handed",
+      "type": "Left-handed-Bat",
+      "price": 4900000
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/tBCJjfP/mustafizure.jpg",
+      "name": "Mustafizur Rahman",
+      "player_category": "Bowler",
+      "country": "Bangladesh",
+      "hand": "Left-handed",
+      "type": "Fast Bowler",
+      "price": 4700000
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/vH0gRnc/mahmudullah.jpg",
+      "name": "Mahmudullah Riyad",
+      "player_category": "All-rounder",
+      "country": "Bangladesh",
+      "hand": "Right-handed",
+      "type": "Right-handed-Bat",
+      "price": 4500000
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/VNyfpL3/mushfiq.jpg",
+      "name": "Mushfiqur Rahim",
+      "player_category": "Batsman",
+      "country": "Bangladesh",
+      "hand": "Right-handed",
+      "type": "Right-handed-Bat",
+      "price": 4400000
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/yhC0DYk/taskin.png",
+      "name": "Taskin Ahmed",
+      "player_category": "Bowler",
+      "country": "Bangladesh",
+      "hand": "Right-handed",
+      "type": "Fast Bowler",
+      "price": 4200000
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/GW2zP1F/liton.jpg",
+      "name": "Liton Das",
+      "player_category": "Batsman",
+      "country": "Bangladesh",
+      "hand": "Right-handed",
+      "type": "Right-handed-Bat",
+      "price": 4600000
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/C6Pq07T/rashid.jpg",
+      "name": "Rashid Khan",
+      "player_category": "Bowler",
+      "country": "Afghanistan",
+      "hand": "Right-handed",
+      "type": "Leg Spinner",
+      "price": 4950000
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/gb0nxxW/bumrah.webp",
+      "name": "Jasprit Bumrah",
+      "player_category": "Bowler",
+      "country": "India",
+      "hand": "Right-handed",
+      "type": "Fast Bowler",
+      "price": 4650000
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/mbsq889/starc.jpg",
+      "name": "Mitchell Starc",
+      "player_category": "Bowler",
+      "country": "Australia",
+      "hand": "Left-handed",
+      "type": "Fast Bowler",
+      "price": 4300000
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/0GPt3p9/boult.jpg",
+      "name": "Trent Boult",
+      "player_category": "Bowler",
+      "country": "New Zealand",
+      "hand": "Left-handed",
+      "type": "Fast Bowler",
+      "price": 4750000
+    }
+  ]
+  
