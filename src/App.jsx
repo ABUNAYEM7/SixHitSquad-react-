@@ -68,6 +68,7 @@ function App() {
       const updatedElement = selectedElement.filter(element=> element.id !== id)
       setSelectedElement(updatedElement)
       setPlayers(players-1)
+      
     }
   return (
    <div>

@@ -27,7 +27,7 @@ const Card = ({data,chosenClickHandler}) => {
     </div>
     <div className='flex items-center justify-between gap-3'>
         <h3 className='text-lg font-medium text-primary'>Price : ${element.price}</h3>
-        <button onClick={()=>chosenClickHandler(element,element.price)} className='btn'>Chose Player</button>
+        <button onClick={()=>chosenClickHandler(element,element.price)} className='btn hover:bg-highlight'>Chose Player</button>
     </div>
   </div>
 </div>)}
