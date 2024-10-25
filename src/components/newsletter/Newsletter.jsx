@@ -1,5 +1,9 @@
+import PropTypes from "prop-types";
 import backgroundImage from "../../assets/bg-shadow.png";
-const Newsletter = () => {
+const Newsletter = ({subscribeClickHandler,
+                    subscribeInput,
+                    email,
+                    }) => {
   return (
     <div className="mt-32 p-10 bg-white relative">
       <div
@@ -18,11 +22,15 @@ const Newsletter = () => {
                 </label>
                 <div className="flex flex-col sm:flex-row md:flex-row   items-center justify-center gap-4">
                   <input
+                  onChange={subscribeInput}
                     type="text"
                     placeholder="username@site.com"
+                    value={email}
                     className="w-full input input-bordered "
                   />
-                  <button className="btn bg-gradient-to-r from-[#e688b3] to-[#f6c155]">
+                  <button
+                   onClick={subscribeClickHandler}
+                   className="btn bg-gradient-to-r from-[#e688b3] to-[#f6c155]">
                     Subscribe
                   </button>
                 </div>
@@ -33,6 +41,13 @@ const Newsletter = () => {
       </div>
     </div>
   );
+};
+
+Newsletter.propTypes = {
+    subscribeClickHandler : PropTypes.func.isRequired,
+    subscribeInput : PropTypes.func.isRequired,
+    email : PropTypes.string.isRequired,
+
 };
 
 export default Newsletter;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Selected = ({selectedElement,deleteClickHandler,isActive,activeBtnClickHandler}) => {
+const Selected = ({selectedElement,deleteClickHandler,isActive,                     activeBtnClickHandler}) => {
     // console.log(data,selectedElement)
   return (
     <div className='my-6 p-4'>

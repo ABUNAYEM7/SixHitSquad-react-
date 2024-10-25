@@ -14,6 +14,9 @@ function App() {
   const [players,setPlayers] = useState(0)
   const [selectedId,setSelectedId] = useState([])
   const [selectedElement,setSelectedElement] =useState([])
+  const [email,setEmail]=useState('')
+  // eslint-disable-next-line no-unused-vars
+  const [subscribe,setSubscribe] =useState(false)
 
   // data-fetching
   useEffect(()=>{
@@ -24,6 +27,7 @@ function App() {
     }
     fetchData()
   },[])
+
 
   // claim-button-click-handler
   function claimClickHandler (){
@@ -67,9 +71,36 @@ function App() {
     function deleteClickHandler (id){
       const updatedElement = selectedElement.filter(element=> element.id !== id)
       setSelectedElement(updatedElement)
+      const updatedSelectedId = selectedId.filter(existId=> existId !== id)
       setPlayers(players-1)
-      
+      toast("Player Remove")
+      setSelectedId(updatedSelectedId)
     }
+
+    // fetchEmail-from-Ls
+  useEffect(()=>{
+    const storedEmail = localStorage.getItem('subscribeEmail')
+    if(storedEmail){
+      setEmail(storedEmail)
+      setSubscribe (true)
+    }
+  },[])
+
+  // newsletterInput-function
+  function subscribeInput(e){
+    const userEmail = e.target.value 
+    setEmail(userEmail)
+  }
+  // newsletter-subscribe-button-function
+  function subscribeClickHandler (e){
+    e.preventDefault()
+    if(email){
+      localStorage.setItem('subscribeEmail',email)
+      toast(`${email.split('@')[0]} ! Thanks For Subscribing`)
+    }
+    
+  }
+
   return (
    <div>
     {/* Navbar */}
@@ -96,6 +127,9 @@ transition: Bounce/>
           selectedId ={selectedId}
           selectedElement={selectedElement}
           deleteClickHandler ={deleteClickHandler}
+          subscribeClickHandler={subscribeClickHandler}
+          subscribeInput ={subscribeInput}
+          email ={email}
           />
     {/* Footer */}
     <Footer/>

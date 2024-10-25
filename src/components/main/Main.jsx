@@ -11,7 +11,10 @@ const Main = ({activeBtnClickHandler,
                 players,
                 selectedId,
                 selectedElement,
-                deleteClickHandler
+                deleteClickHandler,
+                subscribeInput,
+                subscribeClickHandler,
+                email
               }) => {
   return (
     <div className='my-6 p-4 '>
@@ -34,8 +37,12 @@ const Main = ({activeBtnClickHandler,
                                     <Card data ={data}
                                         chosenClickHandler ={chosenClickHandler}
                                     /> 
-                                    <Newsletter/>
-        </div>
+                                    <Newsletter
+                                               subscribeInput={subscribeInput}
+                                               subscribeClickHandler={subscribeClickHandler}
+                                               email={email}
+                                    />
+                                  </div>
                                   :
                                    <Selected players ={players}
                                              selectedId ={selectedId}
@@ -58,6 +65,9 @@ Main.propTypes = {
   selectedId : PropTypes.array.isRequired,
   selectedElement : PropTypes.array.isRequired,
   deleteClickHandler : PropTypes.func.isRequired,
+  subscribeClickHandler : PropTypes.func.isRequired,
+  subscribeInput : PropTypes.func.isRequired,
+  email :PropTypes.string.isRequired,
 
 }
 
