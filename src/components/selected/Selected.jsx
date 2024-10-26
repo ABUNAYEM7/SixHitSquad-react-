@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Selected = ({selectedElement,deleteClickHandler,isActive,                     activeBtnClickHandler}) => {
+const Selected = ({selectedElement,deleteClickHandler,isActive, activeBtnClickHandler}) => {
     // console.log(data,selectedElement)
   return (
     <div className='my-6 p-4'>
@@ -9,11 +9,14 @@ const Selected = ({selectedElement,deleteClickHandler,isActive,                 
             {selectedElement.map(element=><div key={element.id} className='flex items-center justify-between w-full gap-5 p-3 my-3 border-2'>
                 <div className='flex items-center gap-4'>
                     <div>
-                        <img className='h-10 w-10 rounded-full' src={element.image} alt={element.name} />
+                        <img className='h-16 w-16 rounded-full' src={element.image} alt={element.name} />
                     </div>
                     <div className='space-y-2'>
                         <h3 className='text-2xl font-bold text-primary'>{element.name}</h3>
+                        <div>
                         <p className='font-medium text-secondary'>{element.type}</p>
+                        <p className='font-medium text-primary'>Price : {element.price}</p>
+                        </div>
                     </div>
                 </div>
                 <div>
