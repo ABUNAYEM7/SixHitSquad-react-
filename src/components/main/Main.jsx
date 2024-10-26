@@ -14,7 +14,9 @@ const Main = ({activeBtnClickHandler,
                 deleteClickHandler,
                 subscribeInput,
                 subscribeClickHandler,
-                email
+                email,
+                subscribe,
+                unsubscribeClickHandler
               }) => {
   return (
     <div className='my-6 p-4 '>
@@ -41,6 +43,8 @@ const Main = ({activeBtnClickHandler,
                                                subscribeInput={subscribeInput}
                                                subscribeClickHandler={subscribeClickHandler}
                                                email={email}
+                                               subscribe ={subscribe}
+                                               unsubscribeClickHandler={unsubscribeClickHandler}
                                     />
                                   </div>
                                   :
@@ -68,6 +72,8 @@ Main.propTypes = {
   subscribeClickHandler : PropTypes.func.isRequired,
   subscribeInput : PropTypes.func.isRequired,
   email :PropTypes.string.isRequired,
+  subscribe :PropTypes.bool.isRequired,
+  unsubscribeClickHandler : PropTypes.func.isRequired,
 
 }
 

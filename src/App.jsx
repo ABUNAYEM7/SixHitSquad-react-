@@ -15,7 +15,6 @@ function App() {
   const [selectedId,setSelectedId] = useState([])
   const [selectedElement,setSelectedElement] =useState([])
   const [email,setEmail]=useState('')
-  // eslint-disable-next-line no-unused-vars
   const [subscribe,setSubscribe] =useState(false)
 
   // data-fetching
@@ -61,6 +60,7 @@ function App() {
             setSelectedElement([...selectedElement,element])
             setPlayers(players + 1)
             setPoints(points - price)
+            toast("Player Added")
           }
         }
       }else{
@@ -96,11 +96,18 @@ function App() {
     e.preventDefault()
     if(email){
       localStorage.setItem('subscribeEmail',email)
+      setSubscribe(true)
       toast(`${email.split('@')[0]} ! Thanks For Subscribing`)
     }
     
   }
-
+  // unsubscribe-button-handler
+  function unsubscribeClickHandler(){
+    localStorage.removeItem('subscribeEmail')
+    setEmail('')
+    setSubscribe(false)
+    toast('You have unsubscribed successfully')
+  }
   return (
    <div>
     {/* Navbar */}
@@ -130,6 +137,8 @@ transition: Bounce/>
           subscribeClickHandler={subscribeClickHandler}
           subscribeInput ={subscribeInput}
           email ={email}
+          subscribe={subscribe}
+          unsubscribeClickHandler={unsubscribeClickHandler}
           />
     {/* Footer */}
     <Footer/>

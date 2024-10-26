@@ -11,6 +11,8 @@
 1. **Claim Coins**: Claim coins up to 3 times a day.
 2. **Choose Favorite Players**: Pick your top players to build your ultimate team.
 3. **Team Management**: Remove players from your team and replace them with new ones.
+4. **Newsletter Management**: You can subscribe by your Email.
+5. **Subscribe Management**: You can unsubscribe by click the unsubscribe button.
 
 ---
 
@@ -52,9 +54,9 @@
 
 As a beginner, this project presented many challenges, especially with the newsletter subscription section. It required several trials and errors to make it work, and I relied on Google and various resources to overcome these issues. Ultimately, it was a great learning experience, and I hope you enjoy exploring SixHitSquad as much as I enjoyed building it!
 
-## Live Demo
+## Live Demo : http://SixHitSquad.surge.sh
 
-Visit the live version of **SixHitSquad** [here](http://SixHitSquad.surge.sh).
+
 
 ---
 
